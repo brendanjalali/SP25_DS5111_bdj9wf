@@ -97,22 +97,67 @@ mv ygainers.html ../sample_data/
 mv ygainers.csv ../sample_data/
 ```
 
+
 ---
 
-## 5. Structure
+## 5. Normalizing Gainers
+
+### 5.1 Activate Virtual Environment and Run Job
+
+The following are instructions for creating the normalized version of CSV's
+
+```sh
+. env/bin/activate
+python bin/normalize_csv.py <path to raw gainers csv>
+```
+
+
+---
+
+## 6.
+
+To ensure that the code functions as expected, you can run the test suite using `make test`. This command runs `pylint` for code quality checks and executes unit tests to validate the CSV normalization process.
+
+### 6.1 Running the Tests
+
+From the root directory of the project:
+
+```sh
+
+. env/bin/activate
+make test
+````
+
+
+---
+
+## 7. Structure
 
 The following is the structure of the Repository:
 
 ```
-SP25_DS5111_bdj9wf
+.
+├── Makefile
 ├── README.md
+├── bin
+│   ├── __pycache__
+│   │   └── normalize_csv.cpython-312.pyc
+│   └── normalize_csv.py
 ├── init.sh
+├── pylintrc
+├── requirements.txt
 ├── sample_data
+│   ├── wjsgainers.csv
+│   ├── wjsgainers.html
+│   ├── wjsgainers_norm.csv
 │   ├── ygainers.csv
-│   └── ygainers.html
-└── scripts
-    ├── Makefile
-    ├── google-chrome-stable_current_amd64.deb
-    ├── install_chrome_headless.sh
-    └── requirements.txt
+│   ├── ygainers.html
+│   └── ygainers_norm.csv
+├── scripts
+│   ├── google-chrome-stable_current_amd64.deb
+│   └── install_chrome_headless.sh
+└── tests
+    ├── __pycache__
+    │   └── test_normalize_csv.cpython-312-pytest-8.3.4.pyc
+    └── test_normalize_csv.py
 ```

@@ -1,8 +1,10 @@
-import pandas as pd
+"""Module for normalizing CSV files."""
 import sys
 import re
+import pandas as pd
 
 def normalize_csv(input_file):
+	"""Normalizes a CSV file."""
 	df = pd.read_csv(input_file)
 	assert not df.empty, f"Error: {input_file} is empty."
 	if 'Symbol' in df.columns and 'Price' in df.columns and 'Change' in df.columns:
