@@ -1,4 +1,4 @@
-#!/home/ubuntu/SP25_DS5111_bdj9wf/scripts/env/bin/python3
+#!/home/ubuntu/SP25_DS5111_bdj9wf/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
