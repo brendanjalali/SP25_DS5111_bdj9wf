@@ -1,3 +1,5 @@
+[![Feature Validation](https://github.com/brendanjalali/SP25_DS5111_bdj9wf/actions/workflows/validations.yml/badge.svg)](https://github.com/brendanjalali/SP25_DS5111_bdj9wf/actions/workflows/validations.yml)
+
 # Project Setup Guide
 
 ## 1. Prerequisites
