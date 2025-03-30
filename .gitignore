@@ -1,5 +1,6 @@
 google-chrome-stable_current_amd64.deb
 
+*.pyc
 
 sample_data/
 scripts/env/
