@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
-from wsj import GainerDownloadWSJ, GainerProcessWSJ
-from yahoo import GainerDownloadYahoo, GainerProcessYahoo
+from bin.gainers.wsj import GainerDownloadWSJ, GainerProcessWSJ
+from bin.gainers.yahoo import GainerDownloadYahoo, GainerProcessYahoo
 
 # FACTORY
 class GainerFactory:

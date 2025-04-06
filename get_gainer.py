@@ -1,22 +1,22 @@
-from factory import GainerFactory
-from wsj import GainerDownloadWSJ, GainerProcessWSJ
-from yahoo import GainerDownloadYahoo, GainerProcessYahoo
+from bin.gainers.factory import GainerFactory
+from bin.gainers.wsj import GainerDownloadWSJ, GainerProcessWSJ
+from bin.gainers.yahoo import GainerDownloadYahoo, GainerProcessYahoo
 
 class ProcessGainer:
-	__init__(self, gainer_downloader, gainer_normalizer):
+	def __init__(self, gainer_downloader, gainer_normalizer):
 		self.downloader = gainer_downloader
 		self.normalizer = gainer_normalizer
 
-	_def _download(self):
+	def _download(self):
 		self.downloader.download()
 
-	_def _normalize(self):
+	def _normalize(self):
 		self.normalizer.normalize()
 
-	_def _save_to_file(self):
+	def _save_to_file(self):
 		self.normalizer.save_with_timestamp()
 
-	_def process(self):
+	def process(self):
 		self._download()
 		self._normalize()
 		self._save_to_file()

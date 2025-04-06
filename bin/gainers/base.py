@@ -2,7 +2,7 @@ from abc import ABC, abstractmethod
 
 # DOWNLOADER
 class GainerDownload(ABC):
-	def __init__(self):
+	def __init__(self, url=None):
 		self.url = url
 
 	@abstractmethod
