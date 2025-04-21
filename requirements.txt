@@ -4,3 +4,5 @@ html5lib
 beautifulsoup4
 pylint
 pytest
+dbt-core
+dbt-snowflake
