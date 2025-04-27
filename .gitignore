@@ -1,8 +1,9 @@
 google-chrome-stable_current_amd64.deb
 
-*.pyc
-__pycache__
+**/*.pyc
+**/*_pycache_
 
+__pycache__/
 data/
 sample_data/
 scripts/env/
