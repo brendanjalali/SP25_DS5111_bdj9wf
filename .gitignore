@@ -2,6 +2,7 @@ google-chrome-stable_current_amd64.deb
 
 **/*.pyc
 **/*_pycache_
+**/*.ipynb_checkpoints
 
 __pycache__/
 data/
