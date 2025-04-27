@@ -30,3 +30,12 @@ models:
           - not_null
           - accepted_values:
               values:  ['un', 'deux', 'trois']
+
+  - name: enfr
+    description: "insure all values in en column are also in ende"
+    columns:
+      - name: EN
+        data_tests:
+          - relationships:
+              to: ref('ende')
+              field: EN
