@@ -13,6 +13,10 @@ from bin.gainers.factory import GainerFactory
 from bin.gainers.wsj import GainerDownloadWSJ, GainerProcessWSJ
 from bin.gainers.yahoo import GainerDownloadYahoo, GainerProcessYahoo
 
+def test_skip_example():
+    assert True
+
+
 def test_normalize_csv():
 	test_file = "test_data.csv"
 	df = pd.DataFrame({
