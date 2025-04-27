@@ -13,9 +13,9 @@ from bin.gainers.factory import GainerFactory
 from bin.gainers.wsj import GainerDownloadWSJ, GainerProcessWSJ
 from bin.gainers.yahoo import GainerDownloadYahoo, GainerProcessYahoo
 
-def test_skip_example():
-    assert True
-
+@pytest.mark.parametrize("input,expected", [(1, 2), (2, 3)])
+def test_sample(input, expected):
+    assert input + 1 == expected
 
 def test_normalize_csv():
 	test_file = "test_data.csv"
