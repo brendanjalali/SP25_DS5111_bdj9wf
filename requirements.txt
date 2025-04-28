@@ -6,3 +6,5 @@ pylint
 pytest
 dbt-core
 dbt-snowflake
+matplotlib
+seaborn

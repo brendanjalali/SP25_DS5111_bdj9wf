@@ -1,0 +1,20 @@
+# models/gainers/schema.yml
+
+version: 2
+
+models:
+  - name: gainers_consolidated
+    description: "Consolidated table of WSJ and Yahoo gainers with source and file date."
+    columns:
+      - name: symbol
+        description: "Company symbol and name"
+      - name: price
+        description: "Stock price"
+      - name: price_change
+        description: "Price change amount"
+      - name: price_percent_change
+        description: "Percent price change"
+      - name: source
+        description: "Source of data, either WSJ or Yahoo"
+      - name: file_date
+        description: "Date of the data snapshot"
