@@ -7,7 +7,7 @@ Gainers Consolidated allows for the combination of both raw table sources of the
 #### Symbol Groupby Analysis:
 This groupby table allows for aggregation by symbol and allows a comparison of occurences, average percent change, and total gross change by corresponding symbol
 
-```
+```mermaid
 erDiagram
     WSJGAINERS_NORM ||--o{ GAINERS_CONSOLIDATED : "concatenated"
     YGAINERS_NORM ||--o{ GAINERS_CONSOLIDATED : "concatenated"
